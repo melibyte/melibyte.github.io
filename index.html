@@ -1,61 +1,194 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#081019" />
+  <meta name="description" content="Melisa Akbulut — Computer Engineering student exploring cybersecurity, artificial intelligence, and meaningful software projects." />
+  <meta name="author" content="Melisa Akbulut" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Melisa Akbulut — Cybersecurity & AI" />
+  <meta property="og:description" content="Curious by nature. Secure by design. Explore my work, interests and journey in technology." />
+  <meta property="og:url" content="https://melibyte.github.io/" />
+  <title>Melisa Akbulut — Cybersecurity & AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐧%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
 
-<html lang="tr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Melisa Akbulut">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<title>Melisa Akbulut</title>
-	</head>
-	<body>
-		<header>
-			<h1>Melisa Akbulut</h1>
-			<p>İnternet sayfama hoşgeldiniz.</p>
-		</header>
-		<main>
-			<section>
-				<h2> Hakkımda </h2>
-				<p>Düzce Üniversitesi Mühendislik Fakültesi Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. 3 seneden beri alanımda kendimi geliştirmeye çalışıyorum. </p>
-			</section>
-			<section>
-				<h2> İlgi Alanlarım </h2>
-				<ul>
-					<li> Bilgisayar Ağları </li>
-					<li> Yazılım Geliştirme </li>
-					<li> Yapay Zeka </li>
-					<li> Çip Tasarımı </li>
-				</ul>
-			</section>
-			<section id="sosyal-medya">
-				<h2>Sosyal Medya Hesaplarım</h2>
-				<ul>
-					<li>
-						<p><a href="https://www.linkedin.com/in/melisa-akbulut/" target="_blank">LinkedIn</a></p>
-					</li>
-					<li>
-						<p><a href="https://github.com/melibyte" target="_blank">GitHub</a></p>
-					</li>
-				</ul>
-			</section>
-			<section id="projelerim">
-				<h2>Projelerim</h2>
-				<ul>
-					<li><p><a href="https://github.com/melibyte/cpp_playground" target="_blank">cpp_playground</a> : C++ öğrenirken geliştirdiğim projeler.</p></li>
-					<li><p><a href="https://github.com/melibyte/python_playground" target="_blank">python_playground</a> : Python öğrenirken geliştirdiğim projeler.</p></li>
-			</section>
-			<section>
-				<h2>Katıldığım Yarışmalar</h2>
-				<ul>
-					<li><p>Anadolu Ajansı Medya Teknolojileri Hackathonu</p></li>
-					<li><p>2024 Teknofest Çip Tasarım Yarışması</p></li>
-				</ul>
-			</section>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Melisa Akbulut — homepage">
+        <span class="brand-mark" aria-hidden="true">🐧</span>
+        <span>melisa<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#focus" data-i18n="navFocus">Focus</a>
+        <a href="#work" data-i18n="navWork">Work</a>
+        <a href="#journey" data-i18n="navJourney">Journey</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="lang-switch" id="lang-switch" aria-label="Switch language to Turkish" title="Switch language">TR <span aria-hidden="true">↗</span></button>
+        <a class="nav-contact" href="#contact"><span data-i18n="navContact">Let's talk</span> <span aria-hidden="true">↗</span></a>
+        <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-		</main>
-		<footer>
-			<p>&copy; 2024 Melisa Akbulut. Tüm hakları saklıdır.</p>
-		</footer>
-	</body>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal-dot"></span> <span data-i18n="heroEyebrow">COMPUTER ENGINEERING · DÜZCE UNIVERSITY</span></p>
+        <h1 id="hero-title"><span data-i18n="heroLine1">Curious by nature.</span><br /><span class="gradient-text" data-i18n="heroLine2">Secure by design.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Hi, I'm Melisa — a final-year Computer Engineering student exploring the intersection of <strong>cybersecurity</strong>, <strong>artificial intelligence</strong>, and the systems that connect us.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work"><span data-i18n="heroCta1">Explore my work</span><span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="https://github.com/melibyte" target="_blank" rel="noopener noreferrer"><span data-i18n="heroCta2">GitHub profile</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span class="meta-line" aria-hidden="true"></span><span data-i18n="heroMeta">Learning deeply. Building thoughtfully. Staying curious.</span></div>
+      </div>
+
+      <div class="hero-visual" aria-label="Terminal-inspired introduction">
+        <div class="visual-halo" aria-hidden="true"></div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="floating-label floating-label-top"><span class="mini-dot"></span> <span>SECURITY · AI</span></div>
+        <div class="terminal">
+          <div class="terminal-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>melisa@linux: ~/portfolio</span><span class="terminal-symbol">⌘</span></div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="prompt">➜</span> <span class="command">whoami</span></div>
+            <div class="terminal-output"><span class="accent">Melisa Akbulut</span><br />Computer Engineering / Year 4</div>
+            <div class="terminal-line"><span class="prompt">➜</span> <span class="command">cat current_focus.txt</span></div>
+            <div class="terminal-output"><span class="output-index">01</span> cybersecurity<br /><span class="output-index">02</span> artificial_intelligence<br /><span class="output-index">03</span> network_security<br /><span class="output-index">04</span> computer_vision</div>
+            <div class="terminal-line"><span class="prompt">➜</span> <span class="command">sudo apt install curiosity</span></div>
+            <div class="terminal-success">✓ curiosity is already up to date<span class="cursor" aria-hidden="true"></span></div>
+          </div>
+          <div class="terminal-footer"><span><span class="live-dot"></span> LINUX ENVIRONMENT</span><span>v.2026</span></div>
+        </div>
+        <div class="floating-label floating-label-bottom">&lt;/ always learning &gt;</div>
+      </div>
+    </section>
+
+    <div class="marquee-wrapper" aria-label="Interests"><div class="marquee-track" aria-hidden="true"><span>CYBERSECURITY</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>NETWORK SECURITY</span><b>✳</b><span>CONTINUOUS LEARNING</span><b>✳</b><span>CYBERSECURITY</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>NETWORK SECURITY</span><b>✳</b><span>CONTINUOUS LEARNING</span><b>✳</b></div></div>
+
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div class="section-intro"><span class="section-index">01 / <span data-i18n="labelAbout">ABOUT</span></span><h2 id="about-heading" data-i18n="aboutHeading">A little about <em>the person</em> behind the code.</h2></div>
+        <div class="about-copy"><p class="lead" data-i18n="aboutLead">I'm a fourth-year Computer Engineering student at Düzce University, driven by the desire to understand how technology works — and how to make it more secure and useful.</p><p data-i18n="aboutText">My interests have grown from software development and Linux systems into cybersecurity and AI. I learn best by building: from practical applications to collaborative research and hands-on technical experiences.</p><div class="quote-line"><span class="quote-mark">“</span><span data-i18n="aboutQuote">Good engineering begins with better questions.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section focus-section" id="focus" aria-labelledby="focus-heading">
+      <div class="container">
+        <div class="section-heading-row"><div><span class="section-index">02 / <span data-i18n="labelFocus">FOCUS AREAS</span></span><h2 id="focus-heading" data-i18n="focusHeading">The problems I love <em>exploring.</em></h2></div><p class="section-side-note" data-i18n="focusSide">Three areas. One mindset: understand deeply, build responsibly.</p></div>
+        <div class="focus-grid">
+          <article class="focus-card"><div class="focus-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3L27 7V15C27 22 22.4 26.9 16 29C9.6 26.9 5 22 5 15V7L16 3Z"/><path d="M11 16L14.5 19.5L21.5 12.5"/></svg></div><div class="focus-number">/ 01</div><h3 data-i18n="focus1Title">Cybersecurity</h3><p data-i18n="focus1Text">Exploring system security, network protection and practical approaches to understanding threats.</p><div class="focus-tags"><span>Network Security</span><span>Linux</span></div></article>
+          <article class="focus-card"><div class="focus-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3V8M20 3V8M12 24V29M20 24V29M3 12H8M3 20H8M24 12H29M24 20H29"/><path d="M12 17L15 13L18 19L21 15"/></svg></div><div class="focus-number">/ 02</div><h3 data-i18n="focus2Title">AI for Security</h3><p data-i18n="focus2Text">Investigating anomaly detection and how language models can support security incident analysis.</p><div class="focus-tags"><span>Anomaly Detection</span><span>LLMs</span></div></article>
+          <article class="focus-card"><div class="focus-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 12V6H11M21 6H27V12M27 20V26H21M11 26H5V20"/><circle cx="16" cy="16" r="6"/><path d="M13 16L15 18L19 14"/></svg></div><div class="focus-number">/ 03</div><h3 data-i18n="focus3Title">Computer Vision</h3><p data-i18n="focus3Text">Working with image processing and 3D CAD data to identify industrial components using AI.</p><div class="focus-tags"><span>Image Processing</span><span>3D CAD</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="work-heading">
+      <div class="container"><div class="section-heading-row"><div><span class="section-index">03 / <span data-i18n="labelWork">SELECTED WORK</span></span><h2 id="work-heading" data-i18n="workHeading">Ideas, research &amp; <em>things built.</em></h2></div><p class="section-side-note" data-i18n="workSide">A mix of ongoing research and software projects.</p></div>
+        <div class="work-grid">
+          <article class="project-card project-featured"><div class="project-top"><span class="project-category" data-i18n="project1Category">RESEARCH · TEAM LEAD</span><span class="status status-progress"><span class="mini-dot"></span> <span data-i18n="inProgress">In progress</span></span></div><div class="project-art art-vision" aria-hidden="true"><div class="vision-frame vision-frame-one"></div><div class="vision-frame vision-frame-two"></div><span class="vision-cross cross-one">+</span><span class="vision-cross cross-two">+</span><div class="vision-core"><svg viewBox="0 0 100 100" fill="none"><path d="M50 7L87 28V72L50 93L13 72V28L50 7Z"/><path d="M50 7V50M13 28L50 50L87 28M50 50V93"/><path d="M13 72L50 50L87 72"/></svg></div><span class="art-caption">VISION × 3D DATA</span></div><div class="project-content"><p class="project-eyebrow">TUSAŞ LIFT UP</p><h3 data-i18n="project1Title">AI-Assisted Industrial Part Identification</h3><p data-i18n="project1Desc">Leading a student team exploring the fusion of 2D images and 3D CAD data to identify unlabeled industrial components.</p><div class="project-footer"><div class="project-tags"><span>Computer Vision</span><span>AI</span><span>3D CAD</span></div><span class="project-year">2026 —</span></div></div></article>
+          <article class="project-card project-featured"><div class="project-top"><span class="project-category" data-i18n="project2Category">SECURITY · RESEARCH</span><span class="status status-progress"><span class="mini-dot"></span> <span data-i18n="inProgress2">In progress</span></span></div><div class="project-art art-security" aria-hidden="true"><div class="network-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="security-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="art-caption">THREAT INTELLIGENCE</span></div><div class="project-content"><p class="project-eyebrow" data-i18n="project2Eyebrow">AI × CYBERSECURITY</p><h3 data-i18n="project2Title">Anomaly Detection &amp; LLM-Assisted Incident Analysis</h3><p data-i18n="project2Desc">Contributing to ongoing work on identifying unusual activity and supporting the evaluation of security incidents with language models.</p><div class="project-footer"><div class="project-tags"><span>Anomaly Detection</span><span>LLM</span></div><span class="project-year">2026 —</span></div></div></article>
+          <article class="project-card project-compact"><div class="project-top"><span class="project-category" data-i18n="project3Category">SOFTWARE · AI</span><a class="round-arrow" href="https://github.com/melibyte/aksavi-ai" target="_blank" rel="noopener noreferrer" aria-label="AKSAVİ AI Assistant GitHub repository">↗</a></div><div class="project-content"><div class="project-glyph">⌘</div><h3>AKSAVİ AI Assistant</h3><p data-i18n="project3Desc">An AI assistant backend developed with Flask, SQLite and the Groq API.</p><div class="project-footer"><div class="project-tags"><span>Python</span><span>Flask</span><span>AI</span></div></div></div></article>
+          <article class="project-card project-compact"><div class="project-top"><span class="project-category" data-i18n="project4Category">HACKATHON · SOFTWARE</span><a class="round-arrow" href="https://github.com/melibyte/carbonmap-campus" target="_blank" rel="noopener noreferrer" aria-label="CarbonMap Campus GitHub repository">↗</a></div><div class="project-content"><div class="project-glyph">◈</div><h3>CarbonMap Campus</h3><p data-i18n="project4Desc">A campus carbon-emission mapping and tracking platform built during a hackathon.</p><div class="project-footer"><div class="project-tags"><span>Python</span><span>Web</span><span>Data</span></div></div></div></article>
+        </div>
+        <a class="text-link" href="https://github.com/melibyte?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepositories">Browse all repositories</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journey-heading"><div class="container journey-layout"><div class="journey-title"><span class="section-index">04 / <span data-i18n="labelJourney">JOURNEY</span></span><h2 id="journey-heading" data-i18n="journeyHeading">Learning by <em>doing.</em></h2><p data-i18n="journeySubtitle">Every experience adds a new perspective, a new challenge, or a new way of thinking.</p></div><div class="timeline"><div class="timeline-item"><span class="timeline-year">2026 —</span><div><h3 data-i18n="timeline1Title">TUSAŞ LIFT UP · Team Lead</h3><p data-i18n="timeline1Desc">Leading an AI and computer-vision focused graduation project team.</p></div></div><div class="timeline-item"><span class="timeline-year">2026</span><div><h3 data-i18n="timeline2Title">International Internship · Belgrade</h3><p data-i18n="timeline2Desc">Project development, collaboration and presentation through the Human Ports program.</p></div></div><div class="timeline-item"><span class="timeline-year">2026</span><div><h3 data-i18n="timeline3Title">Linux Summer Camp</h3><p data-i18n="timeline3Desc">Hands-on learning in GNU/Linux system administration and networking.</p></div></div><div class="timeline-item"><span class="timeline-year">2025</span><div><h3 data-i18n="timeline4Title">Volta Motor · Software Internship</h3><p data-i18n="timeline4Desc">Worked with C#, .NET Web API, SQL Server and internal business applications.</p></div></div></div></div></section>
+
+    <section class="section stack-section" aria-labelledby="stack-heading"><div class="container stack-layout"><div><span class="section-index">05 / <span data-i18n="labelToolkit">TOOLKIT</span></span><h2 id="stack-heading" data-i18n="stackHeading">Tools I <em>work with.</em></h2><p data-i18n="stackSubtitle">Technologies I've used across coursework, internships and personal projects.</p></div><div class="stack-groups"><div class="stack-group"><h3 data-i18n="stackLanguages">LANGUAGES</h3><div class="chip-list"><span>Python</span><span>C#</span><span>C++</span><span>JavaScript</span><span>SQL</span></div></div><div class="stack-group"><h3 data-i18n="stackTools">TOOLS &amp; FRAMEWORKS</h3><div class="chip-list"><span>Linux</span><span>Git</span><span>Wireshark</span><span>Flask</span><span>FastAPI</span><span>.NET</span></div></div></div></div></section>
+
+    <section class="section beyond-section"><div class="container beyond-layout"><div class="beyond-symbol" aria-hidden="true">🐧</div><div><span class="section-index">06 / <span data-i18n="labelBeyond">BEYOND THE TERMINAL</span></span><h2 data-i18n="beyondHeading">More than just <em>code.</em></h2><p data-i18n="beyondText">Outside the terminal, you'll probably find me playing tennis, exploring a new idea, or asking one more "what if?" question. And yes, I have a soft spot for penguins.</p></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner"><span class="section-index">07 / <span data-i18n="labelContact">LET'S CONNECT</span></span><h2 id="contact-heading" data-i18n="contactHeading">Let's keep the <em>conversation going.</em></h2><p data-i18n="contactText">Interested in cybersecurity, AI, or building something meaningful? I'd love to connect.</p><div class="contact-actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/melisa-akbulut/" target="_blank" rel="noopener noreferrer"><span data-i18n="contactLinkedin">Connect on LinkedIn</span><span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="https://github.com/melibyte" target="_blank" rel="noopener noreferrer"><span data-i18n="contactGitHub">Explore GitHub</span><span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#home">melisa<span>.</span> <span aria-hidden="true">🐧</span></a><p>© <span id="year">2026</span> Melisa Akbulut. <span data-i18n="footerText">Made with curiosity.</span></p><a href="#home" class="back-top"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></footer>
+
+  <script>
+  (() => {
+    const translations = {
+      tr: {
+        skip:'İçeriğe geç',navAbout:'Hakkımda',navFocus:'Odak Alanlarım',navWork:'Çalışmalarım',navJourney:'Yolculuğum',navContact:'İletişim',
+        heroEyebrow:'BİLGİSAYAR MÜHENDİSLİĞİ · DÜZCE ÜNİVERSİTESİ',heroLine1:'Merakla keşfet.',heroLine2:'Güvenle geliştir.',
+        heroDescription:'Merhaba, ben Melisa. <strong>Siber güvenlik</strong>, <strong>yapay zekâ</strong> ve bunları bir araya getiren sistemler üzerine kendini geliştiren 4. sınıf Bilgisayar Mühendisliği öğrencisiyim.',
+        heroCta1:'Çalışmalarıma göz at',heroCta2:'GitHub profilim',heroMeta:'Derinlemesine öğren. Özenle üret. Merakını koru.',
+        labelAbout:'HAKKIMDA',aboutHeading:'Kodun arkasındaki <em>insanı</em> tanıyın.',
+        aboutLead:'Düzce Üniversitesi 4. sınıf Bilgisayar Mühendisliği öğrencisiyim. Teknolojinin nasıl çalıştığını anlamak, onu daha güvenli ve faydalı hâle getirmek beni motive ediyor.',
+        aboutText:'Yazılım geliştirme ve Linux sistemleriyle başlayan ilgim zamanla siber güvenlik ve yapay zekâya yöneldi. En iyi yaparak öğreniyorum: uygulamalar geliştiriyor, ekip çalışmalarına ve teknik projelere katılıyorum.',
+        aboutQuote:'İyi mühendislik, daha iyi sorularla başlar.',
+        labelFocus:'ODAK ALANLARIM',focusHeading:'Keşfetmeyi sevdiğim <em>problemler.</em>',focusSide:'Üç alan, tek yaklaşım: derinlemesine öğrenmek ve sorumlulukla üretmek.',
+        focus1Title:'Siber Güvenlik',focus1Text:'Sistem güvenliği, ağların korunması ve tehditleri anlamaya yönelik pratik yaklaşımları araştırıyorum.',
+        focus2Title:'Güvenlik için Yapay Zekâ',focus2Text:'Anomali tespiti ve dil modellerinin güvenlik olaylarının incelenmesinde nasıl kullanılabileceğini araştırıyorum.',
+        focus3Title:'Bilgisayarlı Görü',focus3Text:'Endüstriyel parçaları yapay zekâyla tanımlamak için görüntü işleme ve 3B CAD verileri üzerinde çalışıyorum.',
+        labelWork:'SEÇİLMİŞ ÇALIŞMALAR',workHeading:'Fikirler, araştırmalar ve <em>üretilenler.</em>',workSide:'Devam eden araştırmalarım ve yazılım projelerimden bir seçki.',
+        project1Category:'ARAŞTIRMA · TAKIM KAPTANI',inProgress:'Devam ediyor',project1Title:'Yapay Zekâ Destekli Endüstriyel Parça Tanımlama',project1Desc:'Etiketsiz endüstriyel parçaların tanımlanması için 2B görüntüler ile 3B CAD verilerinin birleştirilmesini araştıran öğrenci takımına liderlik ediyorum.',
+        project2Category:'SİBER GÜVENLİK · ARAŞTIRMA',inProgress2:'Devam ediyor',project2Eyebrow:'YAPAY ZEKÂ × SİBER GÜVENLİK',project2Title:'Anomali Tespiti ve LLM Destekli Olay Analizi',project2Desc:'Olağan dışı aktivitelerin tespiti ve dil modelleriyle güvenlik olaylarının değerlendirilmesi üzerine devam eden çalışmada yer alıyorum.',
+        project3Category:'YAZILIM · YAPAY ZEKÂ',project3Desc:'Flask, SQLite ve Groq API ile geliştirilen yapay zekâ asistanı arka ucu.',
+        project4Category:'HACKATHON · YAZILIM',project4Desc:'Hackathon kapsamında geliştirilen kampüs karbon emisyonu haritalama ve takip platformu.',
+        allRepositories:'Tüm GitHub depolarımı gör',
+        labelJourney:'YOLCULUĞUM',journeyHeading:'Yaparak <em>öğrenmek.</em>',journeySubtitle:'Her deneyim yeni bir bakış açısı, yeni bir meydan okuma ve yeni bir öğrenme fırsatı.',
+        timeline1Title:'TUSAŞ LIFT UP · Takım Kaptanı',timeline1Desc:'Yapay zekâ ve bilgisayarlı görü odaklı bitirme projesi ekibine liderlik ediyorum.',
+        timeline2Title:'Uluslararası Staj · Belgrad',timeline2Desc:'Human Ports programında proje geliştirme, ekip çalışması ve sunum deneyimi.',
+        timeline3Title:'Linux Yaz Kampı',timeline3Desc:'GNU/Linux sistem yönetimi ve ağ teknolojilerinde uygulamalı eğitim.',
+        timeline4Title:'Volta Motor · Yazılım Stajı',timeline4Desc:'C#, .NET Web API, SQL Server ve kurumsal uygulamalar üzerine çalıştım.',
+        labelToolkit:'TEKNOLOJİLER',stackHeading:'Kullandığım <em>araçlar.</em>',stackSubtitle:'Derslerde, stajlarda ve kişisel projelerde deneyimlediğim teknolojiler.',stackLanguages:'PROGRAMLAMA DİLLERİ',stackTools:'ARAÇLAR & FRAMEWORKLER',
+        labelBeyond:'TERMİNAL DIŞINDA',beyondHeading:'Koddan <em>daha fazlası.</em>',beyondText:'Terminalin dışında beni tenis oynarken, yeni bir fikir keşfederken veya bir kez daha “ya şöyle olsaydı?” diye sorarken bulabilirsiniz. Evet, penguenleri de ayrı seviyorum.',
+        labelContact:'İLETİŞİM',contactHeading:'İletişimde <em>kalalım.</em>',contactText:'Siber güvenlik, yapay zekâ veya anlamlı bir proje üzerine konuşmak ister misiniz? Bağlantı kurmaktan mutluluk duyarım.',contactLinkedin:'LinkedIn’de bağlantı kur',contactGitHub:'GitHub’ı incele',footerText:'Merakla hazırlandı.',backTop:'Yukarı çık'
+      }
+    };
+    const langBtn = document.getElementById('lang-switch');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('main-nav');
+    let lang = 'en';
+    function setLanguage(next) {
+      lang = next;
+      document.documentElement.lang = next;
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        if (next === 'tr') {
+          const value = translations.tr[el.dataset.i18n];
+          if (value !== undefined) el.innerHTML = value;
+        } else if (el.dataset.original !== undefined) {
+          el.innerHTML = el.dataset.original;
+        }
+      });
+      langBtn.innerHTML = next === 'en' ? 'TR <span aria-hidden="true">↗</span>' : 'EN <span aria-hidden="true">↗</span>';
+      langBtn.setAttribute('aria-label', next === 'en' ? 'Switch language to Turkish' : 'Dili İngilizceye çevir');
+      try { localStorage.setItem('melisa-portfolio-lang', next); } catch (_) {}
+    }
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.dataset.original = el.innerHTML; });
+    langBtn.addEventListener('click', () => setLanguage(lang === 'en' ? 'tr' : 'en'));
+    try { if (localStorage.getItem('melisa-portfolio-lang') === 'tr') setLanguage('tr'); } catch (_) {}
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { nav.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); }));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { nav.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); } });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } });
+      }, {threshold: 0.08, rootMargin: '0px 0px -40px 0px'});
+      document.querySelectorAll('.section, .contact-section').forEach(section => { section.classList.add('reveal'); observer.observe(section); });
+    }
+  })();
+  </script>
+</body>
 </html>
-
